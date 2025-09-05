@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" asp-append-version="true" />
+</head>
+<body>
+    @* Header *@
+    <center>
+        <div>
+
+            <a class="btn btn-outline-primary" href="/home/Index">Home</a>
+            <a class="btn btn-outline-warning" href="/home/Privacy">Privacy</a>
+            <a class="btn btn-outline-secondary" href="/home/ContactUs">ContactUs</a>
+            <a class="btn btn-outline-dark" href="/home/AboutUs">AboutUs</a>
+
+        </div>
+    </center>
+    @* End Header *@
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
